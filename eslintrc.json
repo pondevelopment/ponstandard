@@ -1,0 +1,138 @@
+{
+   "extends": "standard",
+   "rules": {
+      "indent": [
+         "error",
+         4,
+         {
+            "ignoredNodes": [
+               "TemplateLiteral"
+            ]
+         }
+      ],
+      "camelcase": [
+         "error",
+         {
+            "properties": "never"
+         }
+      ],
+      "max-params": [
+         "warn",
+         5
+      ],
+      "max-depth": [
+         "warn",
+         4
+      ],
+      "max-statements": [
+         "warn",
+         20
+      ],
+      "linebreak-style": [
+         "warn",
+         "unix"
+      ],
+      "class-methods-use-this": "off",
+      "comma-style": [
+         "warn",
+         "last"
+      ],
+      "no-mixed-spaces-and-tabs": [
+         "warn"
+      ],
+      "no-prototype-builtins": "off",
+      "no-return-assign": [
+         "error",
+         "except-parens"
+      ],
+      "no-restricted-syntax": [
+         "error",
+         "ForInStatement",
+         "LabeledStatement",
+         "WithStatement"
+      ],
+      "no-unused-vars": [
+         "error",
+         {
+            "ignoreRestSiblings": true,
+            "argsIgnorePattern": "res|next|^err"
+         }
+      ],
+      "prefer-const": [
+         "error",
+         {
+            "destructuring": "all"
+         }
+      ],
+      "arrow-body-style": [
+         "error",
+         "as-needed"
+      ],
+      "no-unused-expressions": [
+         "error",
+         {
+            "allowTaggedTemplates": true
+         }
+      ],
+      "no-param-reassign": [
+         "error",
+         {
+            "props": false
+         }
+      ],
+      "max-len": [
+         "error",
+         {
+            "code": 120,
+            "comments": 80,
+            "tabWidth": 4
+         }
+      ],
+      "no-shadow": [
+         "error",
+         {
+            "hoist": "all",
+            "allow": [
+               "resolve",
+               "reject",
+               "done",
+               "next",
+               "err",
+               "error"
+            ]
+         }
+      ],
+      "quotes": [
+         "error",
+         "single",
+         {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+         }
+      ],
+      "import/prefer-default-export": "off",
+      "vars-on-top": "error",
+      "valid-jsdoc": [
+         "error",
+         {
+            "prefer": {
+               "arg": "param",
+               "argument": "param",
+               "class": "constructor",
+               "return": "return",
+               "virtual": "abstract"
+            },
+            "preferType": {
+               "Boolean": "boolean",
+               "Number": "number",
+               "Object": "object",
+               "String": "string"
+            },
+            "requireReturn": false,
+            "matchDescription": ".+",
+            "requireParamDescription": false,
+            "requireReturnDescription": false
+         }
+      ]
+   }
+}
