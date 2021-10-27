@@ -10,11 +10,23 @@
             ]
          }
       ],
+      "block-scoped-var": "error",
       "camelcase": [
          "error",
          {
             "properties": "never"
          }
+      ],
+      "complexity": [
+         "error",
+         {
+            "max": 20
+         }
+      ],
+      "consistent-return": "error",
+      "max-classes-per-file": [
+         "error",
+         1
       ],
       "max-params": [
          "warn",
@@ -37,25 +49,39 @@
          "warn",
          "last"
       ],
+      "no-alert": "error",
+      "no-caller": "error",
+      "no-extra-label": "error",
+      "no-labels": [
+         "error",
+         {
+            "allowLoop": false,
+            "allowSwitch": false
+         }
+      ],
+      "no-loop-func": "error",
       "no-mixed-spaces-and-tabs": [
          "warn"
       ],
       "no-prototype-builtins": "off",
-      "no-return-assign": [
-         "error",
-         "except-parens"
-      ],
       "no-restricted-syntax": [
          "error",
          "ForInStatement",
          "LabeledStatement",
          "WithStatement"
       ],
+      "no-return-await": "error",
       "no-unused-vars": [
          "error",
          {
             "ignoreRestSiblings": true,
             "argsIgnorePattern": "res|next|^err"
+         }
+      ],
+      "no-else-return": [
+         "error",
+         {
+            "allowElseIf": false
          }
       ],
       "prefer-const": [
@@ -68,18 +94,23 @@
          "error",
          "as-needed"
       ],
-      "no-unused-expressions": [
-         "error",
-         {
-            "allowTaggedTemplates": true
-         }
-      ],
+      "no-console": "warn",
       "no-param-reassign": [
          "error",
          {
-            "props": false
+            "props": false,
+            "ignorePropertyModificationsFor": [
+               "acc",
+               "accumulator",
+               "e",
+               "req",
+               "request",
+               "res",
+               "response"
+            ]
          }
       ],
+      "no-useless-concat": "error",
       "max-len": [
          "error",
          {
@@ -110,8 +141,18 @@
             "allowTemplateLiterals": true
          }
       ],
+      "radix": "error",
       "import/prefer-default-export": "off",
       "vars-on-top": "error",
+      "for-direction": "error",
+      "getter-return": [
+         "error",
+         {
+            "allowImplicit": true
+         }
+      ],
+      "no-await-in-loop": "error",
+      "no-inner-declarations": "error",
       "valid-jsdoc": [
          "error",
          {
