@@ -84,12 +84,6 @@
             "allowElseIf": false
          }
       ],
-      "prefer-const": [
-         "error",
-         {
-            "destructuring": "all"
-         }
-      ],
       "arrow-body-style": [
          "error",
          "as-needed"
@@ -153,6 +147,32 @@
       ],
       "no-await-in-loop": "error",
       "no-inner-declarations": "error",
+      "no-var": "error",
+      "prefer-arrow-callback": [
+         "error",
+         {
+            "allowNamedFunctions": false,
+            "allowUnboundThis": true
+         }
+      ],
+      "prefer-destructuring": [
+         "error",
+         {
+            "VariableDeclarator": {
+               "array": false,
+               "object": true
+            },
+            "AssignmentExpression": {
+               "array": true,
+               "object": false
+            }
+         },
+         {
+            "enforceForRenamedProperties": false
+         }
+      ],
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
       "valid-jsdoc": [
          "error",
          {
