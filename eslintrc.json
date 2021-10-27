@@ -1,20 +1,17 @@
 {
    "extends": "standard",
    "rules": {
-      "indent": [
+      "block-scoped-var": "error",
+      "complexity": [
          "error",
-         4,
          {
-            "ignoredNodes": [
-               "TemplateLiteral"
-            ]
+            "max": 20
          }
       ],
-      "camelcase": [
+      "consistent-return": "error",
+      "max-classes-per-file": [
          "error",
-         {
-            "properties": "never"
-         }
+         1
       ],
       "max-params": [
          "warn",
@@ -33,59 +30,66 @@
          "unix"
       ],
       "class-methods-use-this": "off",
-      "comma-style": [
-         "warn",
-         "last"
-      ],
-      "no-mixed-spaces-and-tabs": [
-         "warn"
-      ],
-      "no-prototype-builtins": "off",
-      "no-return-assign": [
+      "no-alert": "error",
+      "no-caller": "error",
+      "no-extra-label": "error",
+      "no-labels": [
          "error",
-         "except-parens"
+         {
+            "allowLoop": false,
+            "allowSwitch": false
+         }
       ],
+      "no-loop-func": "error",
+      "no-prototype-builtins": "off",
       "no-restricted-syntax": [
          "error",
          "ForInStatement",
          "LabeledStatement",
          "WithStatement"
       ],
-      "no-unused-vars": [
+      "no-return-await": "error",
+      "no-else-return": [
          "error",
          {
-            "ignoreRestSiblings": true,
-            "argsIgnorePattern": "res|next|^err"
+            "allowElseIf": false
          }
       ],
-      "prefer-const": [
-         "error",
-         {
-            "destructuring": "all"
-         }
+      "no-multi-assign": [
+         "error"
       ],
       "arrow-body-style": [
          "error",
          "as-needed"
       ],
-      "no-unused-expressions": [
-         "error",
-         {
-            "allowTaggedTemplates": true
-         }
-      ],
+      "no-console": "warn",
       "no-param-reassign": [
          "error",
          {
-            "props": false
+            "props": true,
+            "ignorePropertyModificationsFor": [
+               "acc",
+               "accumulator",
+               "e",
+               "req",
+               "request",
+               "res",
+               "response"
+            ]
          }
       ],
+      "no-useless-concat": "error",
+      "no-nested-ternary": "error",
       "max-len": [
          "error",
          {
             "code": 120,
             "comments": 80,
-            "tabWidth": 4
+            "tabWidth": 4,
+            "ignoreUrls": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
          }
       ],
       "no-shadow": [
@@ -102,6 +106,16 @@
             ]
          }
       ],
+      "no-spaced-func": "error",
+      "no-underscore-dangle": [
+         "error",
+         {
+            "allow": [],
+            "allowAfterThis": false,
+            "allowAfterSuper": false,
+            "enforceInMethodNames": true
+         }
+      ],
       "quotes": [
          "error",
          "single",
@@ -110,8 +124,110 @@
             "allowTemplateLiterals": true
          }
       ],
+      "radix": "error",
       "import/prefer-default-export": "off",
+      "import/no-unresolved": [
+         "error",
+         {
+            "caseSensitive": true
+         }
+      ],
+      "import/named": "error",
+      "import/no-named-as-default": "error",
+      "import/no-named-as-default-member": "error",
+      "import/no-mutable-exports": "error",
+      "import/order": [
+         "error",
+         {
+            "groups": [
+               [
+                  "builtin",
+                  "external",
+                  "internal"
+               ]
+            ]
+         }
+      ],
+      "import/newline-after-import": "error",
+      "import/no-self-import": "error",
+      "import/no-cycle": [
+         "error",
+         {
+            "maxDepth": "∞"
+         }
+      ],
+      "import/no-useless-path-segments": [
+         "error",
+         {
+            "commonjs": true
+         }
+      ],
       "vars-on-top": "error",
+      "for-direction": "error",
+      "getter-return": [
+         "error",
+         {
+            "allowImplicit": true
+         }
+      ],
+      "no-await-in-loop": "error",
+      "no-inner-declarations": "error",
+      "no-var": "error",
+      "no-lonely-if": "error",
+      "prefer-arrow-callback": [
+         "error",
+         {
+            "allowNamedFunctions": false,
+            "allowUnboundThis": true
+         }
+      ],
+      "prefer-destructuring": [
+         "error",
+         {
+            "VariableDeclarator": {
+               "array": false,
+               "object": true
+            },
+            "AssignmentExpression": {
+               "array": true,
+               "object": false
+            }
+         },
+         {
+            "enforceForRenamedProperties": false
+         }
+      ],
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+      "prefer-template": "error",
+      "require-yield": "error",
+      "function-paren-newline": [
+         "error",
+         "consistent"
+      ],
+      "implicit-arrow-linebreak": [
+         "error",
+         "beside"
+      ],
+      "newline-per-chained-call": [
+         "error",
+         {
+            "ignoreChainWithDepth": 4
+         }
+      ],
+      "nonblock-statement-body-position": [
+         "error",
+         "beside",
+         {
+            "overrides": {}
+         }
+      ],
+      "operator-assignment": [
+         "error",
+         "always"
+      ],
+      "prefer-object-spread": "error",
+      "no-delete-var": "error",
       "valid-jsdoc": [
          "error",
          {
