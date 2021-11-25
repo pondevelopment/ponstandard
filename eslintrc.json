@@ -84,7 +84,7 @@
          "error",
          {
             "code": 120,
-            "comments": 80,
+            "comments": 120,
             "tabWidth": 4,
             "ignoreUrls": true,
             "ignoreRegExpLiterals": true,
