@@ -1,5 +1,9 @@
 {
-   "extends": "standard",
+   "extends": [
+      "standard",
+      "plugin:import/recommended"
+   ],
+   "parser": "@babel/eslint-parser",
    "rules": {
       "block-scoped-var": "error",
       "complexity": [

@@ -1,7 +1,7 @@
 {
   "name": "@ponbike/ponstandard",
   "description": "JavaScript Standard Style with custom PON tweaks",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": {
     "name": "Pieter Wigboldus",
     "email": "pieter.wigboldus@pon.com",
@@ -13,6 +13,13 @@
   },
   "type": "module",
   "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-syntax-import-assertions": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-plugin-search-and-replace": "^1.1.0",
+    "babel-plugin-transform-import-meta": "^2.1.1",
     "eslint": "^7.32.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "^2.25.3",
@@ -43,7 +50,7 @@
   "scripts": {
     "lint": "eslint -c ./eslintrc.json .",
     "lint:fix": "eslint -c ./eslintrc.json . --fix",
-    "vulnerabilities": "npm audit --only=prod"
+    "vulnerabilities": "npm audit --production"
   },
   "standard": {
     "ignore": [

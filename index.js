@@ -1,5 +1,5 @@
 import standardEngine from 'standard-engine'
-import opts from './options.js'
+import * as opts from './options.js'
 
 const Linter = standardEngine.linter
 
