@@ -1,7 +1,7 @@
 {
-  "name": "@ponbike/ponstandard",
+  "name": "@pon/ponstandard",
   "description": "JavaScript Standard Style with custom PON tweaks",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": {
     "name": "Pieter Wigboldus",
     "email": "pieter.wigboldus@pon.com",
@@ -9,7 +9,7 @@
   },
   "bin": "./bin/cmd.js",
   "bugs": {
-    "url": "https://github.com/ponbike/ponstandard/issues"
+    "url": "https://github.com/pondevelopment/ponstandard/issues"
   },
   "type": "module",
   "dependencies": {
@@ -39,13 +39,13 @@
   "engines": {
     "node": "^14.14.0 || >=16.0.0"
   },
-  "homepage": "https://github.com/ponbike/ponstandard",
+  "homepage": "https://github.com/pondevelopment/ponstandard",
   "keywords": [],
   "license": "GPL-3",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ponbike/ponstandard.git"
+    "url": "https://github.com/pondevelopment/ponstandard.git"
   },
   "scripts": {
     "lint": "eslint -c ./eslintrc.json .",
