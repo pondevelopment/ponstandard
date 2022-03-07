@@ -1,6 +1,6 @@
 # ponstandard
 
-JavaScript Standard Style with custom PON tweaks
+[Pon](https://www.pon.com) tech community JavaScript Standard Style
 
 The default standardjs lint rules: https://github.com/standard/eslint-config-standard/blob/master/.eslintrc.json
 
