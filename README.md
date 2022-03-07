@@ -7,7 +7,7 @@ The default standardjs lint rules: https://github.com/standard/eslint-config-sta
 ## Install
 
 ```
-npm install @pon/ponstandard --global
+npm install @pondevelopment/ponstandard --global
 ```
 
 ## Usage
