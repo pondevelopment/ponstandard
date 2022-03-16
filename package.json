@@ -1,7 +1,7 @@
 {
   "name": "@pondevelopment/ponstandard",
   "description": "JavaScript Standard Style with custom PON tweaks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Pieter Wigboldus",
     "email": "pieter.wigboldus@pon.com",
