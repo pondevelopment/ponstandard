@@ -6,8 +6,21 @@ The default standardjs lint rules: https://github.com/standard/eslint-config-sta
 
 ## Install
 
+Add a `.npmrc` to your project in the root directory, with the following content:
+
 ```
-npm install @pondevelopment/ponstandard --global
+@pondevelopment:registry=https://npm.pkg.github.com/
+```
+
+```
+npm install @pondevelopment/ponstandard @babel/core @babel/eslint-parser @babel/preset-env --save-dev
+```
+
+Add this to your package.json:
+```
+"ponstandard": {
+    "parser": "@babel/eslint-parser"
+}
 ```
 
 ## Usage
