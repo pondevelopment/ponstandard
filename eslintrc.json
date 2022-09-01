@@ -4,6 +4,22 @@
       "plugin:import/recommended"
    ],
    "parser": "@babel/eslint-parser",
+   "globals": {
+      "fetch": false,
+      "FormData": false,
+      "Headers": false,
+      "Request": false,
+      "Response": false
+   },
+   "env": {
+      "es2022": true,
+      "node": true,
+      "browser": true,
+      "worker": true,
+      "mongo": true,
+      "serviceworker": true,
+      "webextensions": true
+   },
    "rules": {
       "block-scoped-var": "error",
       "complexity": [
