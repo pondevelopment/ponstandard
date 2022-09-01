@@ -4,6 +4,13 @@
       "plugin:import/recommended"
    ],
    "parser": "@babel/eslint-parser",
+   "globals": {
+      "fetch": false,
+      "FormData": false,
+      "Headers": false,
+      "Request": false,
+      "Response": false
+   },
    "rules": {
       "block-scoped-var": "error",
       "complexity": [
