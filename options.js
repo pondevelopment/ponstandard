@@ -13,7 +13,7 @@ export default ({
   cmd: 'ponstandard',
   eslint,
   eslintConfig: {
-    configFile,
+    overrideConfigFile: configFile,
     useEslintrc: true
   },
   homepage: pkg.homepage,
