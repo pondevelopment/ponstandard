@@ -1,7 +1,7 @@
 {
   "name": "@pondevelopment/ponstandard",
   "description": "JavaScript Standard Style with custom PON tweaks",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": {
     "name": "Pieter Wigboldus",
     "email": "pieter.wigboldus@pon.com",
@@ -18,13 +18,13 @@
     "@babel/plugin-syntax-import-assertions": "^7.16.7",
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
-    "@pondevelopment/eslint-config-ponstandard": "^1.0.2",
+    "@pondevelopment/eslint-config-ponstandard": "^1.0.3",
     "babel-plugin-search-and-replace": "^1.1.0",
     "babel-plugin-transform-import-meta": "^2.1.1",
     "eslint": "^8.23.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
     "standard": "^16.0.4",
     "standard-engine": "^15.0.0"
