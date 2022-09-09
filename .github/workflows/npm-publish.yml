@@ -17,6 +17,7 @@ jobs:
           node-version: 18
       - run: npm ci
         env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
   publish-gpr:
@@ -30,7 +31,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
         env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
