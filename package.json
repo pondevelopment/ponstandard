@@ -18,7 +18,7 @@
     "@babel/plugin-syntax-import-assertions": "^7.16.7",
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
-    "@pondevelopment/eslint-config-ponstandard": "^1.0.0",
+    "@pondevelopment/eslint-config-ponstandard": "^1.0.2",
     "babel-plugin-search-and-replace": "^1.1.0",
     "babel-plugin-transform-import-meta": "^2.1.1",
     "eslint": "^8.23.0",
