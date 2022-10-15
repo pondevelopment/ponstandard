@@ -1,7 +1,7 @@
 {
   "name": "@pondevelopment/ponstandard",
   "description": "JavaScript Standard Style with custom PON tweaks",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": {
     "name": "Pieter Wigboldus",
     "email": "pieter.wigboldus@pon.com",
@@ -26,7 +26,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
-    "standard": "^16.0.4",
+    "standard": "^17.0.0",
     "standard-engine": "^15.0.0"
   },
   "devDependencies": {
