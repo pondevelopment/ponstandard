@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'node:url'
 import { readFileSync } from 'node:fs'
 import eslint from 'eslint'
-import stdOpts from 'standard/options.js'
+import stdOpts from 'standard/lib/options.js'
 
 const stdVersion = stdOpts.version
 const pkgUrl = new URL('./package.json', import.meta.url)
